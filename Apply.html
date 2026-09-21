@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0"> <!--fixing the page to be able to fit no matter which devices the user is using on-->
+
+    <meta name="description"
+          content="Apply for a position at Opentra.">
+
+    <title>Opentra | Apply</title>
+
+    <link href="Styling.css" rel="stylesheet">
+    <style>
+        .application-intro {
+            text-align: center;
+            margin-bottom: 25px;
+            scroll-behavior: smooth;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+<header>
+    <img src="Banner.png" alt="Opentra Banner" style="width: 100%;">
+        <nav>
+        <a href = "Home.html"> <img src="Logo2.png" alt="Logo" width=40> </a>
+        <a href = "Apply.html"> Apply </a>
+        <a href = "Jobs.html"> Jobs </a>
+        <a href = "About.html"> About </a>
+        </nav>
+        <hr>
+</header>
+
+<main>
+    <section class="application-intro">
+        <h1>Job Application</h1>
+        <p>
+            Interested in joining Opentra?
+            Complete the application form below.
+        </p>
+
+    </section>
+
+    <form class="application-form"
+          method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
+
+        <fieldset>
+            <legend>Job Information</legend>
+            <div class="form-group">
+
+                <label for="job-reference">
+                    Job Reference Number
+                </label>
+
+                <input
+                    type="text"
+                    id="job-reference"
+                    name="job-reference"
+                    pattern="[A-Za-z0-9]{5}" 
+                    maxlength="5"
+                    required
+                    title="Please enter exactly 5 alphanumeric characters."
+                    placeholder="Example: WD241"> <!-- i didnt let the space to be acceptable here because the reference number should be accurate! -->
+            </div>
+
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Personal Information</legend>
+            <div class="form-group">
+
+                <label for="first-name"> First Name </label>
+
+                <input
+                    type="text"
+                    id="first-name"
+                    name="first-name"
+                    maxlength="20"
+                    pattern="[A-Za-z ]+"
+                    required
+                    title="First name must contain letters only and be no more than 20 characters."
+                    placeholder="First name">
+            </div>
+
+
+            <div class="form-group">
+                <label for="last-name"> Last Name </label>
+
+                <input
+                    type="text"
+                    id="last-name"
+                    name="last-name"
+                    maxlength="20"
+                    pattern="[A-Za-z ]+"
+                    required
+                    title="Last name must contain letters only and be no more than 20 characters."
+                    placeholder="Last name">
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="dob"> Date of Birth </label>
+
+                <input
+                    type="text"
+                    id="dob"
+                    name="dob"
+                    pattern="\d{2}/\d{2}/\d{4}"
+                    placeholder="dd/mm/yyyy"
+                    required
+                    title="Please enter your date of birth in dd/mm/yyyy format.">
+
+            </div>
+
+
+            <fieldset class="gender-fieldset">
+
+                <legend>Gender</legend>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="gender"
+                        value="female"
+                        required>
+                    Female
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="gender"
+                        value="male">
+                    Male
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="gender"
+                        value="other">
+                    Other
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="gender"
+                        value="prefer-not-to-say">
+                    Prefer not to say
+                </label>
+            </fieldset>
+        </fieldset>
+
+
+        <fieldset>
+
+            <legend>Contact Information</legend>
+
+            <div class="form-group">
+
+                <label for="street"> Street Address </label>
+
+                <input
+                    type="text"
+                    id="street"
+                    name="street"
+                    maxlength="40"
+                    required
+                    placeholder="Street address">
+
+            </div>
+
+
+            <div class="form-group">
+                <label for="suburb"> Suburb / Town </label>
+
+                <input
+                    type="text"
+                    id="suburb"
+                    name="suburb"
+                    maxlength="40"
+                    required
+                    placeholder="Suburb or town">
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="state"> State </label>
+
+                <select id="state" name="state" required>
+
+                    <option value=""> Select a state</option>
+                    <option value="VIC"> VIC </option>
+                    <option value="NSW"> NSW </option>
+                    <option value="QLD"> QLD </option>
+                    <option value="NT"> NT </option>
+                    <option value="WA"> WA </option>
+                    <option value="SA"> SA </option>
+                    <option value="TAS"> TAS </option>
+                    <option value="ACT"> ACT </option>
+                </select>
+            </div>
+
+            <div class="form-group">
+
+                <label for="postcode"> Postcode </label>
+                <input
+                    type="text"
+                    id="postcode"
+                    name="postcode"
+                    pattern="[0-9]{4}"
+                    maxlength="4"
+                    required
+                    title="Postcode must contain exactly 4 digits."
+                    placeholder="0000">
+            </div>
+
+            <div class="form-group">
+
+                <label for="email"> Email Address </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    placeholder="example@email.com">
+            </div>
+
+            <div class="form-group">
+                <label for="phone"> Phone Number </label>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    pattern="[0-9]{8,12}"
+                    required
+                    title="Phone number must contain 8 to 12 digits."
+                    placeholder="Phone number">
+            </div>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Skills</legend>
+            <p>
+                Select the skills that apply to you:
+            </p>
+
+            <div class="checkbox-group">
+
+                <label>
+                    <input type="checkbox" name="skills" value="html"> HTML
+                </label>
+
+                <label>
+                    <input type="checkbox" name="skills" value="css"> CSS
+                </label>
+
+                <label>
+                    <input type="checkbox" name="skills" value="web-development"> Web Development
+                </label>
+
+                <label>
+                    <input type="checkbox" name="skills" value="ui-design"> UI Design
+                </label>
+
+                <label>
+                    <input type="checkbox" name="skills" value="ux-design"> UX Design
+                </label>
+
+                <label>
+                    <input type="checkbox" name="skills" value="communication"> Communication
+                </label>
+
+            </div>
+
+            <div class="form-group">
+                <label for="other-skills"> Other Skills </label>
+
+                <textarea
+                    id="other-skills"
+                    name="other-skills"
+                    rows="6"
+                    placeholder="Tell us about any other relevant skills..."></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for = "Soft-skills"> Soft-skills </label>
+
+                <textarea
+                    id = "Soft-skills"
+                    name = "Soft-skills"
+                    rows="6"
+                    placeholder="Tell us a little more about your soft-skills here...."></textarea>
+
+            </div>
+
+        </fieldset>
+
+
+        <div class="form-buttons">
+            <button type="submit"> Submit Application </button>
+            <button type="reset"> Reset Form </button>
+        </div>
+
+    </form>
+
+</main>
+
+
+<footer>
+        <p>&copy; 2026 Opentra. All rights reserved.</p>
+        <p> Group: Opentra | G04 </p>
+        <div class="footer-links">
+            <a href="https://github.com/" target="_blank"> GitHub Repository </a>
+            <a href="https://www.atlassian.com/software/jira" target="_blank"> Jira </a>
+            <a href="mailto:opentra@example.com"> Email Us </a>
+        </div>
+</footer>
+
+</body>
+</html>
