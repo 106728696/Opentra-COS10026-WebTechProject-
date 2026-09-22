@@ -1,5 +1,27 @@
 * { /*universal selector*/
-    font-family: Ovo, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Ovo", Georgia, sans-serif;
+    background-color: #0b1224;
+    color:#c9dbe7;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: "Montserrat", "Geneva", Verdana, Sans-serif;
+}
+
+.brand {
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+}
+
+header p {
+    font-style: italic;
 }
 
 nav {
@@ -17,24 +39,116 @@ nav a { /*navigation links*/
     border: 4px;
     color:#b79c73;
     font-weight: bold;
-    font-family: Geneva, Verdana, Sans-serif;
+    font-family: "Geneva", Verdana, Sans-serif;
     position: center;
     flex-wrap: wrap;
     gap: 10px;
-
 }
 
-nav a:hover,
-nav a:focus {
-    background-color: #c9dbe7;
-    outline: 2px solid white;
+nav a:hover {
+    color:#edd8b6;
+}
+
+h1 {
+    font-size: 2.5rem;
 }
 
 h2, h3 {
-        color: #4d3423;
-        font-family: Montserrat, Roboto, Helvetica, Sans-serif;
+        color: #755537;
         font-weight: bold;
 }
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+.description-text {
+    width: 60%;
+}
+
+.search-button :hover {
+    background-color: #b79c73;
+    color: #1c2741;
+}
+
+main section {
+    padding: 40px 6%;
+}
+
+.courses p, .Employment-announcements p {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #cbd5e1;
+    background-color: #1c2741;
+}
+
+thead {
+    background-color: #4d3423;
+    color: #ffffff;
+    font-family: "Geneva", Verdana, Sans-serif;
+}
+
+thead tr :hover {
+    background-color: #2d1e13;
+    color: #9bb3f7;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+}
+
+th {
+    text-align: center;
+}
+
+tbody tr :hover {
+    background-color: #111a2e;
+    color: #b79c73;
+}
+
+.Testimonials {
+    background-color: #141f38;
+}
+
+article {
+    padding: 30px;
+    border: 2px #0b1224;
+}
+
+.Employment-announcements a {
+    color:#8c6b55
+}
+
+.Statistics {
+    background-color: #141f38;
+    display: grid;
+    gap: 20px;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.Statistics h2 {
+    grid-column: 1/-1;
+}
+
+.Statistics div {
+    padding: 20px;
+}
+
+.Statistics h3 {
+    color:#967e5a
+}
+
+.Statistics div :hover {
+    font-size: 150%;
+}
+
 
 .application-form {
     background-color: white;
@@ -54,7 +168,7 @@ h2, h3 {
 .application-form legend {
     padding: 0 10px;
     font-weight: bold;
-    color: #172554;
+    color: #8c6b55;
 }
 
 .form-group {
@@ -83,7 +197,7 @@ h2, h3 {
 .form-group select:focus,
 .form-group textarea:focus {
     outline: 3px solid #bfdbfe;
-    border-color: #2563eb;
+    border-color: #a98764;
 }
 
 .gender-fieldset {
@@ -125,8 +239,262 @@ h2, h3 {
     background-color: #475569;
 }
 
-footer {
-    background-color: #1c2741;
-    color: #c9dbe7;
+.header-container {
+    width: 85%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-intro {
     text-align: center;
+    padding: 50px 0;
+}
+
+.about-intro p {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.group-info {
+    padding-left: 25px;
+}
+
+.group-info ul {
+    margin-top: 10px;
+}
+
+.team-photo {
+    margin: 20px 0;
+    padding: 15px;
+
+    border: 2px solid #183153;
+}
+
+.team-photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+.team-photo figcaption {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+
+.contributions dt {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+
+.contributions dd {
+    margin: 8px 0 20px 0;
+}
+
+
+.student-id {
+    display: inline-block;
+
+    margin-left: 10px;
+    padding: 3px 8px;
+
+    background-color: #e6eef8;
+    color: #183153;
+
+    border-radius: 4px;
+
+    font-size: 14px;
+}
+
+
+
+.quotes dt {
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+
+.quotes dd {
+    margin-left: 0;
+}
+
+
+blockquote {
+    margin: 10px 0;
+    padding: 10px 15px;
+
+    border-left: 4px solid #183153;
+
+    background-color: #f5f5f5;
+}
+
+
+
+.table-container {
+    overflow-x: auto;
+}
+
+
+.fun-facts {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+
+.fun-facts caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.fun-facts th,
+.fun-facts td {
+    border: 1px solid #333333;
+    padding: 12px;
+    text-align: left;
+}
+
+
+.fun-facts th {
+    background-color: #183153;
+    color: #ffffff;
+}
+
+
+.fun-facts tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+.fun-facts tbody tr:hover {
+    background-color: #dce9f7;
+}
+
+
+
+.acknowledgement {
+    padding: 25px;
+
+    background-color: #f3f6f4;
+
+    border-left: 4px solid #446b55;
+}
+
+
+footer {
+    margin-top: 60px;
+    padding: 40px 8%;
+
+    background-color: #183153;
+    color: #ffffff;
+}
+
+
+footer h2 {
+    color: #ffffff;
+}
+
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+
+.footer-links a {
+    color: #ffffff;
+}
+
+
+.footer-links a:hover {
+    text-decoration: none;
+}
+
+
+.copyright {
+    margin-top: 30px;
+    padding-top: 20px;
+
+    border-top: 1px solid #63758c;
+
+    font-size: 14px;
+}
+
+
+
+@media screen and (max-width: 700px) {
+
+    main {
+        width: 90%;
+    }
+
+
+    .header-container {
+        width: 90%;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    h1 {
+        font-size: 32px;
+    }
+
+
+    section {
+        margin: 40px 0;
+    }
+
+
+    .student-id {
+        display: block;
+        width: fit-content;
+
+        margin-left: 0;
+        margin-top: 5px;
+    }
+
+
+    .fun-facts {
+        min-width: 650px;
+    }
+
+}
+
+footer {
+    background-color:#4d3423;
+    color:#b79c73;
+    text-align: center;
+}
+
+.footer-links a {
+    color:#cbd5e1
+}
+
+.footer-links :hover {
+    color:#0b1224
 }
