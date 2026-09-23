@@ -256,7 +256,7 @@ article {
 
 /*Job Page*/
 
-main aside {
+.job-page aside {
     float: right;
     background-color:#755537;
     color:#e6eef8;
@@ -266,11 +266,11 @@ main aside {
     box-shadow: 0 7px 15px #020100;
 }
 
-main aside h2 {
+.job-page aside h2 {
     color:#141f38;
 }
 
-main section {
+.job-page section {
     background-image: url(BlueGradientBG.png) repeat X;
     border: 2px solid #64748b;
     border-radius: 15px;
@@ -329,8 +329,6 @@ main section {
     text-align: center;
     font-size: 14px;
 }
-
-
 
 .contributions dt {
     font-size: 18px;
@@ -408,7 +406,7 @@ blockquote {
 .acknowledgement {
     padding: 25px;
 
-    background-color: #f3f6f4;
+    background-color:#111a2e;
 
     border-left: 4px solid #446b55;
 }
