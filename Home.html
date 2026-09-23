@@ -5,6 +5,17 @@
         <link href = "style/Styling.css" rel = "stylesheet">
         <meta charset="utf-8">
         <title> Opentra Home Page </title>
+        <style>
+            #search-box {
+            width: 70%; 
+            max-width: 500px;
+            padding: 16px 18px; 
+            border: none;
+            border-radius: 8px 0 0 8px;
+            font-size: 15px; 
+            outline: none;
+            }
+        </style>
     </head>
 
     <body>
@@ -40,11 +51,8 @@
                 <form action="/search" method="get" role="search">
                     <br> 
                     <label id="search-label" for="search"> Type in your Search query:</label> <br>
-                    <input type="search" id="search" name="search" placeholder="Search for courses, topics, or resources..."
-                        style="width: 70%; max-width: 500px;
-                        padding: 16px 18px; border: none;
-                        border-radius: 8px 0 0 8px;
-                        font-size: 15px; outline: none;">
+                    <input type="search" id="search-box" name="search" 
+                    placeholder="Search for courses, topics, or resources...">
                         <button type ="submit"
                         style="padding: 16px 28px; border: none;
                         font-size: 15px; cursor: pointer;
