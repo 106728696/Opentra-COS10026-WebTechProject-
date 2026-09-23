@@ -269,10 +269,12 @@ article {
 
 .job-page aside {
     float: right;
+    weight: 25%
     background-color:#755537;
     color:#e6eef8;
     padding: 28px;
-    border: none;
+    border: 2px;
+    margin: 1px;
     border-radius: 15px;
     box-shadow: 0 7px 15px #020100;
 }
