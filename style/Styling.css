@@ -324,9 +324,9 @@ article {
 }
 
 .team-photo {
-    margin: 20px 0;
+    max-width: 900px;
+    margin: 20px auto 40px;
     padding: 15px;
-
     border: 2px solid #183153;
 }
 
@@ -336,30 +336,16 @@ article {
     height: auto;
 }
 
-
 .team-photo figcaption {
     margin-top: 10px;
     text-align: center;
     font-size: 14px;
 }
 
-.contributions dt {
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 25px;
-}
-
-
-.contributions dd {
-    margin: 8px 0 20px 0;
-}
-
-
 .student-id {
     display: inline-block;
-
-    margin-left: 10px;
-    padding: 3px 8px;
+    margin: 5px 0 12px;
+    padding: 4px 10px;
 
     background-color: #e6eef8;
     color: #183153;
@@ -367,8 +353,54 @@ article {
     border-radius: 4px;
 
     font-size: 14px;
+    font-weight: bold;
+}
+.team-section {
+    text-align: center;
 }
 
+.team-members {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+    max-width: 1200px;
+    margin: 30px auto 0;
+}
+
+.team-member {
+    padding: 20px;
+
+    background-color: #111a2e;
+
+    border: 2px solid #183153;
+    border-radius: 8px;
+
+    text-align: center;
+}
+
+.member-photo {
+    width: 180px;
+    height: 180px;
+
+    object-fit: cover;
+    object-position: center;
+
+    display: block;
+    margin: 0 auto 15px;
+
+    border-radius: 6px;
+}
+
+.team-member h3 {
+    margin: 10px 0 5px;
+    color: #967e5a;
+}
+
+.team-member p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
 
 
 .quotes dt {
