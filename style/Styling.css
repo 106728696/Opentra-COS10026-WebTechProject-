@@ -57,7 +57,7 @@ h1 {
 }
 
 h2, h3 {
-        color: #755537;
+        color:#967e5a;
         font-weight: bold;
 }
 
@@ -78,8 +78,7 @@ h2 {
 }
 
 .search-button :hover {
-    background-color: #b79c73;
-    color: #1c2741;
+    background-color: #475569;
 }
 
 main section {
@@ -201,7 +200,7 @@ article {
 .form-group input,
 .form-group select,
 .form-group textarea {
-    width: 100%;
+    width: 97%;
     padding: 10px;
     border: 1px solid #94a3b8;
     border-radius: 5px;
@@ -239,18 +238,30 @@ article {
 
 .form-buttons {
     display: flex;
-    gap: 15px;
+    gap: 3px;
     justify-content: center;
     margin-top: 20px;
 }
 
-
-.form-buttons button[type="reset"] {
-    background-color: #64748b;
+.form-buttons button {
+    padding: 16px 28px; 
+    border: none;               
+    font-size: 15px; 
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #4d3423; 
+    color: #ffffff;
 }
 
+.form-buttons button[type="reset"]{
+    border-radius: 0 8px 8px 0; 
+}
 
-.form-buttons button[type="reset"]:hover {
+.form-buttons button[type="submit"]{
+    border-radius: 8px 0 0 8px; 
+}
+
+.form-buttons :hover {
     background-color: #475569;
 }
 
